@@ -1,8 +1,13 @@
+.img-border {
+  background-color: black;
+  padding-bottom: 10px;
+  margin: 0 5px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -127,6 +132,7 @@ body {
   background-color: #45567d;
   min-height: 400px;
   padding-bottom: 50px;
+  min-height: 100vh;
 }
 
 #projects h2 {
@@ -135,7 +141,7 @@ body {
   text-decoration: underline;
   font-family: Arial;
   padding-top: 50px;
-  padding-bottom: 50px;
+  
 }
 
 #project-flex-container {
@@ -156,8 +162,8 @@ body {
   padding-bottom: 10px;
 }
 
-.project-tile {
-  
+.project-tile a {
+  font-size: 17px;
 }
 
 
@@ -223,3 +229,11 @@ footer {
 figcaption {
   text-align: center;
 }
+
+
+
+
+
+
+
+
