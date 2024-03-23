@@ -1,49 +1,15 @@
+/*
 .img-border {
   background-color: black;
   padding-bottom: 10px;
   margin: 0px 5px;
 }
+*/
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; 
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* Adjust font size for mobile devices */
-  body {
-    font-size: 14px;
-  }
-} 
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* Adjust font size for iPads, Tablets */
-  body {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Adjust font size for small screens, laptops */
-  body {
-    font-size: 20px;
-  }
- 
-}
-
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  /* Adjust font size for desktops, large screens */
-  body {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (min-width: 1201px) {
-  /* Adjust font size for extra large screens, TV */
-  body {
-    font-size: 30px;
-  }
 }
 
 
@@ -54,13 +20,7 @@ h1 {
   color: white;
 }
 
-h2 {
-  
-}
 
-h3 {
-  
-}
 
 a {
   font-weight: bold;
@@ -68,18 +28,20 @@ a {
   text-decoration: none;
 }
 
-header {
-  
-}
+
 
 #navbar {
+  
+  
   position: fixed;
   overflow: hidden;
  
   width: 100%;
-  min-height: 50px;
+  height: 50px;
   background-color: DarkRed;
-  padding-top: 5px;
+  padding-top: 0px;
+  padding-left: 1rem;
+  z-index: 1;
 }
 
 ul {
@@ -91,7 +53,7 @@ ul {
 
 li {
   float: right;
-  padding: 10px;
+  padding: 5px;
   
 }
 
@@ -112,11 +74,13 @@ body {
 }
 
 #welcome-section {
-  background-color: Gray;
+  background-color: #45567d;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   margin: 0;
   padding-top: 200px;
   min-height: 100vh;
+  color: white;
+  text-shadow: 1px 1px black;
 }
 
 #web-dev {
@@ -132,6 +96,7 @@ body {
   background-color: #45567d;
   min-height: 400px;
   padding-bottom: 50px;
+  padding-top: 50px;
   min-height: 100vh;
 }
 
@@ -141,26 +106,20 @@ body {
   text-decoration: underline;
   font-family: Arial;
   padding-top: 50px;
+  padding-bottom: 50px;
+  text-shadow: 3px 3px darkred;
   
 }
 
-#project-flex-container {
-  padding-top: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 0;
-  overflow: hidden;
 
-  
-  
-}
 
+/*
 .project-img {
   height: 250px;
   width: 300px;
   padding-bottom: 10px;
 }
+*/
 
 .project-tile a {
   font-size: 17px;
@@ -174,11 +133,12 @@ body {
   color: white;
   padding-top: 25px;
   padding-bottom: 25px;
+  text-shadow: 2px 2px black;
 }
 
 #profile-section {
   
-  background-color: DarkRed;
+  background-color: darkred;
   min-height: 300px;
   margin-top: 0; 
   padding-top: 35px;
@@ -205,9 +165,6 @@ body {
   min-height: 80px;
 }
 
-#github {
-  
-}
 
 
 
@@ -230,6 +187,12 @@ figcaption {
   text-align: center;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
 
 
 
